@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ReceiptWise Support</title>
+  <meta name="description" content="ReceiptWise support and contact information." />
+  <style>
+    :root{
+      --bg:#0b0b12;
+      --card:#121326;
+      --text:#eef0ff;
+      --muted:#b8bbd9;
+      --border:rgba(255,255,255,.10);
+      --accent:#5b5ce6; /* indigo */
+      --link:#a7a8ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background: radial-gradient(1200px 800px at 30% 10%, rgba(91,92,230,.28), transparent 60%),
+                  radial-gradient(900px 700px at 80% 30%, rgba(128,63,255,.22), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width:860px;
+      margin:0 auto;
+      padding:48px 18px;
+    }
+    .header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo{
+      width:44px;height:44px;
+      border-radius:14px;
+      background: linear-gradient(135deg, rgba(91,92,230,1), rgba(128,63,255,1));
+      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      position:relative;
+    }
+    .logo:after{
+      content:"";
+      position:absolute;
+      inset:12px 14px 12px 14px;
+      border-radius:6px;
+      background:rgba(255,255,255,.92);
+      transform:rotate(2deg);
+    }
+    .title h1{
+      font-size:22px;
+      margin:0;
+      letter-spacing:.2px;
+    }
+    .title p{
+      margin:2px 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .nav{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .nav a{color:var(--muted)}
+    .card{
+      background:rgba(18,19,38,.86);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      margin-top:12px;
+    }
+    @media (min-width: 760px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    h2{
+      margin:0 0 8px;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+    p{margin:0 0 10px;color:var(--muted)}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    li{margin:6px 0}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(91,92,230,.14);
+      border:1px solid rgba(91,92,230,.35);
+      color:var(--text);
+      font-size:14px;
+      margin-top:6px;
+    }
+    .pill strong{color:var(--text)}
+    .muted{color:var(--muted)}
+    .footer{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:12px;
+      text-align:center;
+    }
+    .divider{
+      height:1px;
+      background:var(--border);
+      margin:14px 0;
+    }
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">
+          <h1>ReceiptWise Support</h1>
+          <p>Help, contact, and common questions</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Use</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>
+        Need help with ReceiptWise? Reach out and we’ll get you sorted.
+      </p>
+
+      <div class="pill">
+        Contact: <strong><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></strong>
+      </div>
+      <p class="muted" style="margin-top:10px">
+        Replace <span class="kbd">support@yourdomain.com</span> with your real support email.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="grid">
+        <div class="card" style="padding:16px">
+          <h2>Common issues</h2>
+          <ul>
+            <li><strong>Export doesn’t work:</strong> CSV export is available for Pro users. Make sure you’re subscribed and try again.</li>
+            <li><strong>Scan limit reached:</strong> Free users have a monthly limit. Upgrade to Pro for unlimited scans.</li>
+            <li><strong>Wrong amount/date/category:</strong> You can edit any expense from the expense details screen.</li>
+            <li><strong>Restore purchases:</strong> Open Settings → Subscription → Restore purchases.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding:16px">
+          <h2>Subscription & billing</h2>
+          <ul>
+            <li>Subscriptions are managed by Apple via your App Store account.</li>
+            <li>To manage or cancel: iOS Settings → Apple ID → Subscriptions.</li>
+            <li>If Pro isn’t recognized, try “Restore purchases” and reopen the app.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding:16px">
+          <h2>Data & privacy</h2>
+          <ul>
+            <li>Your expenses are stored on your device (unless you add cloud sync later).</li>
+            <li>We may use receipt text to extract fields (merchant, date, total, category).</li>
+            <li>Read the full details in the Privacy Policy.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding:16px">
+          <h2>What to include in your email</h2>
+          <ul>
+            <li>Device model and iOS version</li>
+            <li>ReceiptWise app version</li>
+            <li>What you expected vs what happened</li>
+            <li>(Optional) A screenshot — please avoid sensitive info if possible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> ReceiptWise. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
